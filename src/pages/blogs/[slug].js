@@ -58,8 +58,8 @@ export default function Slug({ post }) {
         return <div>Post not found</div>;
     }
 
-    let featuredImageUrl =
-        "https://inhouse.cryscampus.com/wordpress/bitswits/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
+    let featuredImageUrl = "";
+        // "https://inhouse.cryscampus.com/wordpress/bitswits/wp-admin/uploads/2023/08/moz-brand-authority-768x439-1.png";
 
     return (
         <>
@@ -83,9 +83,9 @@ export default function Slug({ post }) {
                             <Image
                                 quality={75}
                                 src={
-                                    post.featuredImage
-                                        ? `https://inhouse.cryscampus.com/wordpress/bitswits/wp-content/uploads/${post.featuredImage.node.mediaDetails.file}`
-                                        : featuredImageUrl
+                                    post.featuredImage.featuredImageUrl
+                                        // ? `https://inhouse.cryscampus.com/wordpress/bitswits/wp-content/uploads/${post.featuredImage.node.mediaDetails.file}`
+                                        // : featuredImageUrl
                                 }
                                 alt="bestsellingpublisher"
                                 width={736}
