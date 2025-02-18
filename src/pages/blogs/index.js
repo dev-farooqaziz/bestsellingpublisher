@@ -5,21 +5,21 @@ import { getPostList } from "../api/blogs/route";
 
 
 
-export async function getStaticProps() {
-    const posts = await getPostList();
-    return {
-        props: {
-            posts,
-        },
-    };
-}
+// export async function getStaticProps() {
+//     const posts = await getPostList();
+//     return {
+//         props: {
+//             posts,
+//         },
+//     };
+// }
 
-const BlogAR = ({ posts }) => {
+const BlogAR = () => {
     return (
         <>
         <Header bgColor="bg-black"/>
         <Hero/>
-        <Cards posts={posts} />
+        {/* <Cards posts={posts} /> */}
         </>
     )
 }
