@@ -180,7 +180,7 @@ const BookSeller = () => {
                                 </div>
                                 <Link href="#" className='flex items-center gap-2 text-[14px] mr-md:text-[15px] poppins font-[500]'>
                                     <Image src={Location} alt='Email Icon' className='w-[30px] h-[30px]' />
-                                    1001 Wilshire Boulevard #1176 Los Angeles, CA 90017
+                                    Office abc street, New York
                                 </Link>
                             </div>
                         </div>
